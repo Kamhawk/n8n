@@ -1,0 +1,15 @@
+---
+application:
+  name: "n8n-kamel"
+  project: "test-bis"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "n8n-monitoring-db"
+  version: "4.4"
+routers:
+- name: "main-n8n-kamel"
+  routes:
+  - application_name: "n8n-kamel"
+    paths:
+    - "/*"
